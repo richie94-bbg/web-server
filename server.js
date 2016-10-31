@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var PORT = 3000; //uppercase variable name is saying it shouldn't change
+var PORT = process.env.PORT || 3000; //uppercase variable name is saying it shouldn't change
 
 // app.get('/',function(req, res){ //get responds to http request methof
 // 	res.send("Hello Express!");
