@@ -20,7 +20,7 @@ var middleware = {
 app.use(middleware.logger); //important to put middleware uo top to run
 
 app.get("/about",middleware.requireAuthentication,middleware.logger,function(req,res){
-	res.send("About Us");
+	res.send("About Richard Robinson");
 });
 
 app.use(express.static(__dirname + "/public")); //takes folder you wnt to expose
